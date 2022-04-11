@@ -1,12 +1,10 @@
 import numpy as np
 import torch
 import pandas as pd
-from sklearn.datasets import load_iris
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 import torch.nn as nn
 import torch.nn.functional as F
-from torch.autograd import Variable
 import tqdm
 import matplotlib.pyplot as plt
 
@@ -46,7 +44,7 @@ def classification(path):
         X_test = torch.FloatTensor(X_test)
         y_train = torch.LongTensor(y_train)
         y_test = torch.LongTensor(y_test)
-        
+
         optimizer = torch.optim.Adam(model.parameters(), lr = 0.001)
         loss_fn = nn.CrossEntropyLoss()
 
