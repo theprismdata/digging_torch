@@ -1,1 +1,2 @@
-# digging_torch
+# PyTorch API 따라해보기...
+상당수 코드는 구글링 내용입니다
